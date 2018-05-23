@@ -55,7 +55,6 @@ public class UserController extends BaseController {
     @ResponseBody
     @RequestMapping(value = "/test", method = RequestMethod.GET)
     public String test() {
-
         return "获取test";
     }
 }
