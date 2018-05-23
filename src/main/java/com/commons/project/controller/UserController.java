@@ -47,4 +47,15 @@ public class UserController extends BaseController {
         List<User> list = userService.getUsers();
         return list.toString();
     }
+
+    /**
+     * 获取test
+     * @return
+     */
+    @ResponseBody
+    @RequestMapping(value = "/test", method = RequestMethod.GET)
+    public String test() {
+
+        return "获取test";
+    }
 }
